@@ -65,6 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/kde3/plugins
 %dir %{_libdir}/kde3/plugins/styles
 %{_libdir}/kde3/plugins/styles/*.so
+%{_libdir}/kde3/plugins/styles/*.la
 %{_applnkdir}/Settings/KDE/LookNFeel/liquid.desktop
 %{_datadir}/apps/*/*.*
 %{_datadir}/apps/*/*/*.*
