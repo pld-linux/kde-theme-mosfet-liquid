@@ -1,16 +1,18 @@
+%define		_prenum		pre1
+%define         _version         0.9.6
 Summary:	High Performance Liquid
 Summary(pl):	Wysoko wydajny Liquid
 Name:		kde-theme-mosfet-liquid
-Version:	0.9.5
-Release:	4
+Version:	%{_version}%{_prenum}
+Release:	1
 License:	GPL
 Group:		Themes
-Source0:	http://www.mosfet.org/mosfet-liquid%{version}.tar.gz
+Source0:	http://www.mosfet.org/mosfet-liquid%{_version}-%{_prenum}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://www.mosfet.org/liquid.html
-BuildRequires:	kdebase-devel >= 3.0
-BuildRequires:	kdelibs-devel >= 3.0
-BuildRequires:	qt-devel >= 3.0.5
+BuildRequires:	kdebase-devel >= 3.0.8
+BuildRequires:	kdelibs-devel >= 3.0.8
+BuildRequires:	qt-devel >= 3.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -27,7 +29,7 @@ rather than pixmaps (which would need to be scaled).
 Efektywna wersja popularnego stylu interfejsu u¿ytkownika - liquid.
 
 %prep
-%setup  -q -n mosfet-liquid%{version}
+%setup  -q -n mosfet-liquid%{_version}%{_prenum}
 
 %build
 %configure
