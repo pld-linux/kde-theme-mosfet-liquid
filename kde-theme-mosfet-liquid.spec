@@ -2,7 +2,7 @@ Summary:	High Performance Liquid
 Summary(pl):	Wysoko wydajny Liquid
 Name:		kde-theme-mosfet-liquid
 Version:	0.9.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Themes
 Source0:	http://www.mosfet.org/mosfet-liquid%{version}.tar.gz
@@ -44,6 +44,10 @@ install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Settings/KDE/LookNFeel/liquid.de
 
 # splash screens conflict
 rm -rf $RPM_BUILD_ROOT%{_datadir}/apps/ksplash
+
+%post
+echo "You may have to run kinstalltheme for this theme to become available"
+echo "in currently opened sessions."
 
 %clean
 rm -rf $RPM_BUILD_ROOT
