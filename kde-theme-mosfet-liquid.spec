@@ -25,15 +25,19 @@ rather than pixmaps (which would need to be scaled).
 
 %description -l pl
 Efektywna wersja popularnego stylu interfejsu u¿ytkownika - liquid.
+Wykorzystuje silnik styli widgetów KDE/Qt, który u¿ywa w³asnego kodu
+C++ do renderowania widgetów. Aby sprostaæ wymaganiu du¿ej wydajno¶ci,
+styl jest tworzony z powtarzalnych komponentów zamiast pixmap (które
+musia³yby byæ skalowane).
 
 %prep
 %setup -q -n mosfet-liquid%{_version}%{_prenum}
 
 %build
-cp /usr/share/automake/config.sub admin
+cp -f /usr/share/automake/config.sub admin
 %configure \
 	--with-qt-libraries=%{_libdir}
-#--enable-objprelink
+
 %{__make}
 
 %install
