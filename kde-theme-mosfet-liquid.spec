@@ -61,9 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/lib*.so
-%attr(755,root,root) %{_libdir}/lib*.la
+%{_libdir}/lib*.la
 %attr(755,root,root) %{_libdir}/kde3/*.so
-%attr(755,root,root) %{_libdir}/kde3/*.la
+%{_libdir}/kde3/*.la
 %{_libdir}/kde3/plugins/styles/*.so
 %{_libdir}/kde3/plugins/styles/*.la
 %{_applnkdir}/Settings/KDE/LookNFeel/liquid.desktop
