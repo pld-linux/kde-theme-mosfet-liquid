@@ -15,8 +15,6 @@ BuildRequires:	kdelibs-devel >= 3.0.8
 BuildRequires:	qt-devel >= 3.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 High Performance Liquid is an efficent and streamlined version of a
