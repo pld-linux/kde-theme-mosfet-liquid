@@ -2,15 +2,15 @@ Summary:	High Performance Liquid
 Summary(pl):	Wysoko wydajny Liquid
 Name:		kde-theme-mosfet-liquid
 Version:	0.9.5
-Release:	3
+Release:	4
 License:	GPL
 Group:		Themes
 Source0:	http://www.mosfet.org/mosfet-liquid%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://www.mosfet.org/liquid.html
-BuildRequires:	qt-devel >= 3.0.5
 BuildRequires:	kdebase-devel >= 3.0
 BuildRequires:	kdelibs-devel >= 3.0
+BuildRequires:	qt-devel >= 3.0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -60,11 +60,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/lib*.so
 %attr(755,root,root) %{_libdir}/lib*.la
-%dir %{_libdir}/kde3
 %attr(755,root,root) %{_libdir}/kde3/*.so
 %attr(755,root,root) %{_libdir}/kde3/*.la
-%dir %{_libdir}/kde3/plugins
-%dir %{_libdir}/kde3/plugins/styles
 %{_libdir}/kde3/plugins/styles/*.so
 %{_libdir}/kde3/plugins/styles/*.la
 %{_applnkdir}/Settings/KDE/LookNFeel/liquid.desktop
