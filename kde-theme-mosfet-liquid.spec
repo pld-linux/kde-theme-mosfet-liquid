@@ -4,18 +4,17 @@ Summary:	High Performance Liquid
 Summary(pl):	Wysoko wydajny Liquid
 Name:		kde-theme-mosfet-liquid
 Version:	%{_version}%{_prenum}
-Release:	1
+Release:	2
 License:	GPL
 Group:		Themes
 Source0:	http://www.mosfet.org/mosfet-liquid%{_version}-%{_prenum}.tar.gz
 # Source0-md5:	b307becc99285f4463c65703622ed859
 Source1:	%{name}.desktop
 URL:		http://www.mosfet.org/liquid.html
-BuildRequires:	kdebase-devel >= 3.0.8
-BuildRequires:	kdelibs-devel >= 3.0.8
-BuildRequires:	qt-devel >= 3.1
+BuildRequires:	kdebase-devel >= 3.1.1
+BuildRequires:	kdelibs-devel >= 3.1.1
+BuildRequires:	qt-devel >= 3.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 High Performance Liquid is an efficent and streamlined version of a
