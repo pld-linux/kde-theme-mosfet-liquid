@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/apps/ksplash
 
 %post
 /sbin/ldconfig
-%banner %{name} -e << EOF
+%banner %{name} -e <<EOF
 You may have to run kinstalltheme for this theme to become available
 in currently opened sessions.
 EOF
