@@ -16,6 +16,8 @@ BuildRequires:	kdelibs-devel >= 3.1.1
 BuildRequires:	qt-devel >= 3.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
+
 %description
 High Performance Liquid is an efficent and streamlined version of a
 liquid style UI. It makes use of KDE/Qt's widget styling engine, which
