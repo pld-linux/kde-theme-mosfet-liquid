@@ -46,14 +46,14 @@ install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Settings/KDE/LookNFeel/liquid.de
 rm -rf $RPM_BUILD_ROOT%{_datadir}/apps/ksplash
 
 %post
+/sbin/ldconfig
 echo "You may have to run kinstalltheme for this theme to become available"
 echo "in currently opened sessions."
 
+%postun -p /sbin/ldconfig
+
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%post -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
