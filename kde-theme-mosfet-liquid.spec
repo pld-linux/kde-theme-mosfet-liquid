@@ -2,13 +2,13 @@ Summary:	High Performance Liquid
 Summary(pl):	Wysoko wydajny Liquid
 Name:		kde-theme-mosfet-liquid
 Version:	0.9.5
-Release:	2
+Release:	3
 License:	GPL
 Group:		Themes
 Source0:	http://www.mosfet.org/mosfet-liquid%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://www.mosfet.org/liquid.html
-BuildRequires:	qt-devel >= 3.0.3
+BuildRequires:	qt-devel >= 3.0.5
 BuildRequires:	kdelibs-devel >= 3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,8 +29,8 @@ Efektywna wersja popularnego stylu interfejsu u¿ytkownika - liquid.
 %setup  -q -n mosfet-liquid%{version}
 
 %build
-%configure \
-	--enable-objprelink
+%configure
+#--enable-objprelink
 %{__make}
 
 %install
