@@ -9,6 +9,7 @@ Source0:	http://www.mosfet.org/mosfet-liquid%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://www.mosfet.org/liquid.html
 BuildRequires:	qt-devel >= 3.0.5
+BuildRequires:	kdebase-devel >= 3.0
 BuildRequires:	kdelibs-devel >= 3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
