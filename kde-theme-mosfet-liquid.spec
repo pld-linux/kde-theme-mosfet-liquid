@@ -8,6 +8,7 @@ Release:	1
 License:	GPL
 Group:		Themes
 Source0:	http://www.mosfet.org/mosfet-liquid%{_version}-%{_prenum}.tar.gz
+# Source0-md5:	b307becc99285f4463c65703622ed859
 Source1:	%{name}.desktop
 URL:		http://www.mosfet.org/liquid.html
 BuildRequires:	kdebase-devel >= 3.0.8
