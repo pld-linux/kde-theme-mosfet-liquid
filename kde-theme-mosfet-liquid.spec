@@ -30,7 +30,9 @@ Efektywna wersja popularnego stylu interfejsu u¿ytkownika - liquid.
 %setup  -q -n mosfet-liquid%{_version}%{_prenum}
 
 %build
-%configure
+cp /usr/share/automake/config.sub admin
+%configure \
+	--with-qt-libraries=%{_libdir}
 #--enable-objprelink
 %{__make}
 
