@@ -12,4 +12,6 @@ X-KDE-FactoryName=liquid
 Name=Mosfet's Liquid
 Comment=Liquid configuration
 Keywords=liquid,mosfet,colors,colours,scheme,menu,transparent,translucent
+Categories=Qt;KDE;X-KDE-settings-looknfeel;
+OnlyShowIn=KDE;
 # vi: encoding=utf-8
