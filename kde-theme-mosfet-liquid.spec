@@ -1,5 +1,5 @@
 %define		_prenum		pre1
-%define         _version         0.9.6
+%define		_version	0.9.6
 Summary:	High Performance Liquid
 Summary(pl):	Wysoko wydajny Liquid
 Name:		kde-theme-mosfet-liquid
@@ -27,7 +27,7 @@ rather than pixmaps (which would need to be scaled).
 Efektywna wersja popularnego stylu interfejsu u¿ytkownika - liquid.
 
 %prep
-%setup  -q -n mosfet-liquid%{_version}%{_prenum}
+%setup -q -n mosfet-liquid%{_version}%{_prenum}
 
 %build
 cp /usr/share/automake/config.sub admin
