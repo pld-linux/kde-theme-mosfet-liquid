@@ -14,6 +14,7 @@ URL:		http://www.mosfet.org/liquid.html
 BuildRequires:	kdebase-devel >= 3.1.1
 BuildRequires:	kdelibs-devel >= 3.1.1
 BuildRequires:	qt-devel >= 3.1.2
+BuildRequires:	rpmbuild(macros) >= 1.176
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -54,9 +55,10 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/apps/ksplash
 
 %post
 /sbin/ldconfig
-echo "You may have to run kinstalltheme for this theme to become available"
-echo "in currently opened sessions."
-
+%banner %{name} -e << EOF
+You may have to run kinstalltheme for this theme to become available
+in currently opened sessions.
+EOF
 %postun -p /sbin/ldconfig
 
 %clean
