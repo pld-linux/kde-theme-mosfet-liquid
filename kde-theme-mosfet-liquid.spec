@@ -1,7 +1,7 @@
 %define		_prenum		pre1
 %define		_version	0.9.6
 Summary:	High Performance Liquid
-Summary(pl):	Wysoko wydajny Liquid
+Summary(pl.UTF-8):   Wysoko wydajny Liquid
 Name:		kde-theme-mosfet-liquid
 Version:	%{_version}%{_prenum}
 Release:	2
@@ -24,12 +24,12 @@ uses custom C++ code to render the widgets. To meet the high
 performance objectives, the style is made of tileable components
 rather than pixmaps (which would need to be scaled).
 
-%description -l pl
-Efektywna wersja popularnego stylu interfejsu uøytkownika - liquid.
-Wykorzystuje silnik styli widgetÛw KDE/Qt, ktÛry uøywa w≥asnego kodu
-C++ do renderowania widgetÛw. Aby sprostaÊ wymaganiu duøej wydajno∂ci,
-styl jest tworzony z powtarzalnych komponentÛw zamiast pixmap (ktÛre
-musia≥yby byÊ skalowane).
+%description -l pl.UTF-8
+Efektywna wersja popularnego stylu interfejsu u≈ºytkownika - liquid.
+Wykorzystuje silnik styli widget√≥w KDE/Qt, kt√≥ry u≈ºywa w≈Çasnego kodu
+C++ do renderowania widget√≥w. Aby sprostaƒá wymaganiu du≈ºej wydajno≈õci,
+styl jest tworzony z powtarzalnych komponent√≥w zamiast pixmap (kt√≥re
+musia≈Çyby byƒá skalowane).
 
 %prep
 %setup -q -n mosfet-liquid%{_version}%{_prenum}
