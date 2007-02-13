@@ -1,7 +1,7 @@
 %define		_prenum		pre1
 %define		_version	0.9.6
 Summary:	High Performance Liquid
-Summary(pl.UTF-8):   Wysoko wydajny Liquid
+Summary(pl.UTF-8):	Wysoko wydajny Liquid
 Name:		kde-theme-mosfet-liquid
 Version:	%{_version}%{_prenum}
 Release:	2
