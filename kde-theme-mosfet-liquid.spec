@@ -13,7 +13,7 @@ Source1:	%{name}.desktop
 URL:		http://www.mosfet.org/liquid.html
 BuildRequires:	kdebase-devel >= 3.1.1
 BuildRequires:	kdelibs-devel >= 3.1.1
-BuildRequires:	qt-devel >= 3.1.2
+BuildRequires:	qt-devel >= 6:3.1.2
 BuildRequires:	rpmbuild(macros) >= 1.176
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
